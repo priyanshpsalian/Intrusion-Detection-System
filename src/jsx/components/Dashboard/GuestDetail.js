@@ -14,13 +14,13 @@ const GuestDetail = () =>{
 				<div className="col-xl-9 col-xxl-8">
 					<div className="card">	
 						<div className="card-header border-0 pb-0">
-							<h4 className="card-title">Current Booking</h4>
+							<h4 className="card-title">Recent Entry</h4>
 						</div>
 						<div className="card-body">
 							<BookingSlider />
 							<div className="d-flex mt-4 flex-wrap">
-								<h4 className="card-title me-auto">Room Facilities</h4>
-								<h5 className="card-title">AC, Shower, Double Bed, Towel, Bathup, Coffee Set, LED TV, Wifi</h5>
+								<h4 className="card-title me-auto">Reason</h4>
+								<h5 className="card-title">Meeting with the investor (Business Purpose)</h5>
 							</div>
 						</div>
 						<div className="card-body d-flex pt-0 align-items-center flex-wrap">
@@ -31,22 +31,22 @@ const GuestDetail = () =>{
 									</svg>
 								</span>
 								<div>
-									<h5 className="text-primary">Booking ID #0052466623</h5>
-									<h4 className="card-title mb-0">King Deluxe B-23</h4>
+									<h5 className="text-primary">ID #0052466623</h5>
+									<h4 className="card-title mb-0">Floor: B-23</h4>
 								</div>
 							</div>
 							<div className="d-sm-flex d-block align-items-center">
 								<div className="me-5 mb-sm-0 mb-3">
-									<p className="mb-2"><i className="far fa-user scale3 me-3"></i>Room Capacity</p>
-									<h4 className="mb-0 card-title">3-5 Person</h4>
+									<p className="mb-2"><i className="far fa-user scale3 me-3"></i>Person Accompanying</p>
+									<h4 className="mb-0 card-title">3 Persons</h4>
 								</div>
 								<div className="me-5 mb-sm-0 mb-3">
-									<p className="mb-2"><i className="fas fa-bed scale3 me-3"></i>Bed Type</p>
-									<h4 className="mb-0 card-title">Double</h4>
+									<p className="mb-2"><i className="fas fa-bed scale3 me-3"></i>Time</p>
+									<h4 className="mb-0 card-title">10:30 PM</h4>
 								</div>
 								<div>
-									<p className="mb-2"><i className="far fa-calendar-minus scale3 me-3"></i>Booking Date</p>
-									<h4 className="mb-0 card-title">Oct 25th - 28th, 2020</h4>
+									<p className="mb-2"><i className="far fa-calendar-minus scale3 me-3"></i>Date of Visit</p>
+									<h4 className="mb-0 card-title">Oct 25th, 2022</h4>
 								</div>
 							</div>
 						</div>
@@ -58,8 +58,8 @@ const GuestDetail = () =>{
 							<div className="d-flex align-items-center">
 								<img src={profile10} alt="" className="rounded profile-img me-4" />
 								<div>
-									<h5 className="text-primary">#GS-2234</h5>
-									<h4 className="mb-0">Louis Khan</h4>
+									<h5 className="text-primary">#0052466623</h5>
+									<h4 className="mb-0">Jayu Jain</h4>
 								</div>
 							</div>
 							<div className="row mt-4 pt-3">
@@ -73,15 +73,15 @@ const GuestDetail = () =>{
 							<ul className="user-info-list">
 								<li>
 									<i className="fas fa-phone-volume"></i>
-									<span>+12 3456 678</span>
+									<span>+91 9594646797</span>
 								</li>
 								<li>
 									<i className="far fa-envelope"></i>
-									<span className="overflow-hidden">louiskhan002@mail.com</span>
+									<span className="overflow-hidden">jayujain002@mail.com</span>
 								</li>
 								<li>
 									<i className="fas fa-map-marker-alt"></i>
-									<span>New Avenue Street Corner South London 224151</span>
+									<span>Andheri West,Mumbai,Maharashtra</span>
 								</li>
 							</ul>
 						</div>
@@ -89,7 +89,7 @@ const GuestDetail = () =>{
 				</div>
 				<div className="col-xl-12">
 					<div className="d-flex align-items-center rooms flex-wrap">
-						<h4 className="me-auto mb-3">History Booking</h4>
+						<h4 className="me-auto mb-3">Visting History </h4>
 						<div className="mb-3">
 							<Link to={"#"} className="btn btn-primary me-3"><i className="fas fa-calendar-times me-2"></i>Date Filter</Link>
 							<Link to={"#"} className="btn btn-primary"><i className="far fa-file-word me-2"></i>Generate Report</Link>	

@@ -18,6 +18,7 @@ import { ThemeContext } from "../../../context/ThemeContext";
 import RadialDount from './Dashboard/RadialDount'; 
 import ReservationChart from './Dashboard/ReservationChart'; 
 import LatestCustomer from './Dashboard/LatestCustomer'; 
+import handleStartCaptureClick from '../charts/Sparkline/index';
 
 const AnalyticsDonut = loadable(() =>
 	pMinDelay(import("./Dashboard/AnalyticsDonut"), 1000)
@@ -37,8 +38,7 @@ const Home = () => {
 					<div className="card gradient-1 card-bx">
 						<div className="card-body d-flex align-items-center">
 							<div className="me-auto text-white">
-								<h2 className="text-white">872</h2>
-								<span className="fs-18">New Booking</span>
+								<a><h2 className="text-white" onClick={handleStartCaptureClick}>Go Live</h2></a>
 							</div>
 							<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fillRule="evenodd" clipRule="evenodd" d="M29.0611 39.4402L13.7104 52.5947C12.9941 53.2089 11.9873 53.3497 11.1271 52.9556C10.2697 52.5614 9.7226 51.7041 9.7226 50.7597C9.7226 50.7597 9.7226 26.8794 9.7226 14.5028C9.7226 9.16424 14.0517 4.83655 19.3904 4.83655H38.7289C44.0704 4.83655 48.3995 9.16424 48.3995 14.5028V50.7597C48.3995 51.7041 47.8495 52.5614 46.9922 52.9556C46.1348 53.3497 45.1252 53.2089 44.4088 52.5947L29.0611 39.4402ZM43.5656 14.5028C43.5656 11.8335 41.3996 9.66841 38.7289 9.66841C33.0207 9.66841 25.1014 9.66841 19.3904 9.66841C16.7196 9.66841 14.5565 11.8335 14.5565 14.5028V45.5056L27.4873 34.4215C28.3926 33.646 29.7266 33.646 30.6319 34.4215L43.5656 45.5056V14.5028Z" fill="white"/>

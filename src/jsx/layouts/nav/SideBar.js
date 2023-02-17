@@ -177,6 +177,10 @@ const SideBar = () => {
     >
       <PerfectScrollbar className="deznav-scroll">
         <MM className="metismenu" id="menu">
+        <Link className="has-arrow ai-icon" to="#" >
+              <i className="flaticon-025-dashboard"></i>
+              <span className="nav-text">Dashboard</span>
+            </Link>
           <li className={`${deshBoard.includes(path) ? "mm-active" : ""}`}>
             <Link className="has-arrow ai-icon" to="#" >
               <i className="flaticon-025-dashboard"></i>
@@ -201,9 +205,15 @@ const SideBar = () => {
           <li className={`${app.includes(path) ? "mm-active" : ""}`}>
             <Link className="has-arrow ai-icon" to="#" >
               <i className="flaticon-050-info"></i>
-              <span className="nav-text">Apps</span>
+              <span className="nav-text">Go Live</span>
             </Link>
             <ul >
+            <Link
+                  className={`${path === "chart-sparkline" ? "mm-active" : ""}`}
+                  to="/chart-sparkline"
+                >
+                  Go Live
+                </Link>
               <li><Link className={`${path === "app-profile" ? "mm-active" : ""}`} to="/app-profile">Profile</Link></li>
               <li><Link className={`${path === "post-details" ? "mm-active" : ""}`} to="/post-details">Post Details</Link></li>
               <li className={`${email.includes(path) ? "mm-active" : ""}`}><Link className="has-arrow" to="#" >Email</Link>
