@@ -55,8 +55,8 @@ const Chat = ({ PerfectScrollbar, toggleChatBox, toggleTab }) => {
             </svg>
           </Link>
           <div>
-            <h6 className='mb-1'>Chat List</h6>
-            <p className='mb-0'>Show All</p>
+            <h6 className='mb-1'>Imp Alert</h6>
+            {/* <p className='mb-0'>Show All</p> */}
           </div>
           <Link to='#'>
             <svg
@@ -83,8 +83,42 @@ const Chat = ({ PerfectScrollbar, toggleChatBox, toggleTab }) => {
           id='DZ_W_Contacts_Body'
         >
           <ul className='contacts'>
-            <li className='name-first-letter'>A</li>
-            <li
+
+          <li className='active'>
+              <div className='d-flex bg-danger p-3 '>
+                <div className='user_info'>
+                  <span className='text-white'>A Person Arrived</span>
+                  <p className='text-white'>10 Aug 2020</p>
+                </div>
+                {/* <div className='ms-auto'> */}
+                  {/* <Link to='#' className='btn btn-primary btn-xs sharp me-1'>
+                    <i className='fa fa-pencil'></i>
+                  </Link>
+                  <Link to='#' className='btn btn-danger btn-xs sharp'>
+                    <i className='fa fa-trash'></i>
+                  </Link> */}
+                {/* </div> */}
+              </div>
+            </li>
+
+            <li>
+              <div className='d-flex bg-danger p-3'>
+                <div className='user_info '>
+                  <span className='text-white'>Someone Detect near the gate</span>
+                  <p className='text-white'>10 Aug 2020</p>
+                </div>
+                <div className='ms-auto'>
+                  {/* <Link to='#' className='btn btn-primary btn-xs sharp me-1'>
+                    <i className='fa fa-pencil'></i>
+                  </Link>
+                  <Link to='#' className='btn btn-danger btn-xs sharp'>
+                    <i className='fa fa-trash'></i>
+                  </Link> */}
+                </div>
+              </div>
+            </li>
+            {/* <li className='name-first-letter'>A</li> */}
+            {/* <li
               className='active dz-chat-user'
               onClick={() => setOpenMsg(true)}
             >
@@ -102,8 +136,8 @@ const Chat = ({ PerfectScrollbar, toggleChatBox, toggleTab }) => {
                   <p>Kalid is online</p>
                 </div>
               </div>
-            </li>
-            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
+            </li> */}
+            {/* <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -118,8 +152,8 @@ const Chat = ({ PerfectScrollbar, toggleChatBox, toggleTab }) => {
                   <p>Taherah left 7 mins ago</p>
                 </div>
               </div>
-            </li>
-            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
+            </li> */}
+            {/* <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -134,8 +168,8 @@ const Chat = ({ PerfectScrollbar, toggleChatBox, toggleTab }) => {
                   <p>Sami is online</p>
                 </div>
               </div>
-            </li>
-            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
+            </li> */}
+            {/* <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -150,8 +184,8 @@ const Chat = ({ PerfectScrollbar, toggleChatBox, toggleTab }) => {
                   <p>Nargis left 30 mins ago</p>
                 </div>
               </div>
-            </li>
-            <li className='name-first-letter'>B</li>
+            </li> */}
+            {/* <li className='name-first-letter'>B</li>
             <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
@@ -314,8 +348,8 @@ const Chat = ({ PerfectScrollbar, toggleChatBox, toggleTab }) => {
                   <p>Nargis left 30 mins ago</p>
                 </div>
               </div>
-            </li>
-            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
+            </li> */}
+            {/* <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -330,7 +364,7 @@ const Chat = ({ PerfectScrollbar, toggleChatBox, toggleTab }) => {
                   <p>Rashid left 50 mins ago</p>
                 </div>
               </div>
-            </li>
+            </li> */}
           </ul>
         </PerfectScrollbar>
       </div>

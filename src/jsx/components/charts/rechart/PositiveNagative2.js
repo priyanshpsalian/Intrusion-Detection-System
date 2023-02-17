@@ -1,26 +1,10 @@
 import React, { PureComponent } from "react";
 import { BarChart, Bar, ResponsiveContainer } from "recharts";
+import { useState } from "react";
 
-const data = [
-  {
-    name: "Page A",
-    uv: 3000,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    name: "Page B",
-    uv: -3000,
-    pv: 1398,
-    amt: 2210,
-  },
-  {
-    name: "Page C",
-    uv: -2000,
-    pv: -2500,
-    amt: 2290,
-  },
-  {
+
+// const [d, setD] = useState("data");
+  var data =[{
     name: "Page D",
     uv: 2780,
     pv: 3908,
@@ -46,7 +30,12 @@ const data = [
   },
 ];
 
+// console.log("Hello");
+// console.log(data[0].name);
+
 export default class NagetivePositive extends PureComponent {
+  
+
   render() {
     return (
       <ResponsiveContainer width="100%" aspect={4.0 / 2.0}>
@@ -59,7 +48,9 @@ export default class NagetivePositive extends PureComponent {
             bottom: 5,
           }}
         >
-          <Bar dataKey="pv" fill="#709fba" />
+          {/* <Bar dataKey="pv" fill="#709fba" /> */}
+        
+          {/* console.log(data.name, data.uv, data.pv, data.amt); */}
           <Bar dataKey="uv" fill="#ff5c00" />
           <Bar dataKey="amt" fill="#216fed" />
         </BarChart>

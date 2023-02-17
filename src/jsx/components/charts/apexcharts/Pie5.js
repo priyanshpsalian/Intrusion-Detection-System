@@ -6,7 +6,7 @@ class ApexRedialBar2 extends React.Component {
     super(props);
 
     this.state = {
-      series: [71, 63, 90],
+      series: [25],
       options: {
         chart: {
           type: "radialBar",
@@ -21,7 +21,7 @@ class ApexRedialBar2 extends React.Component {
             inverseOrder: false,
             hollow: {
               margin: 0,
-              size: "30%",
+              size: "50%",
               background: "transparent",
             },
 
@@ -125,8 +125,8 @@ class ApexRedialBar2 extends React.Component {
           opacity: 1,
         },
 
-        colors: ["#216fed", "#216fed", "#216fed"],
-        labels: ["Ticket A", "Ticket B", "Ticket C"],
+        colors: ["#216fed"],
+        labels: ["Temperature"],
         legend: {
           fontSize: "14px",
           show: true,

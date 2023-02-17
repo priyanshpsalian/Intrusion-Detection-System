@@ -16,7 +16,7 @@ const ChatBox = ({ onClick, toggle }) => {
 
    const dataToggle = [
       { href: "#notes", name: "Notes" },
-      { href: "#alerts", name: "Alerts" },
+      // { href: "#alerts", name: "Alerts" },
       { href: "#chat", name: "Chat" },
    ];
 
