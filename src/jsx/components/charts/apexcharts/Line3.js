@@ -10,6 +10,7 @@ class ApexLine3 extends React.Component {
         {
           name: "Running",
           data: [20, 40, 20, 80, 40, 40, 20, 60, 60, 20, 110, 60],
+          
         },
       ],
       options: {

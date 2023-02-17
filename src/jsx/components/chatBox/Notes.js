@@ -41,8 +41,8 @@ const Notes = ({ toggleTab, PerfectScrollbar, toggleChatBox }) => {
             </svg>
           </Link>
           <div>
-            <h6 className='mb-1'>Notes</h6>
-            <p className='mb-0'>Add New Nots</p>
+            <h6 className='mb-1'>All Alert!!!</h6>
+            {/* <p className='mb-0'>Add New Nots</p> */}
           </div>
           <Link to='#'>
             <svg
@@ -78,66 +78,66 @@ const Notes = ({ toggleTab, PerfectScrollbar, toggleChatBox }) => {
         >
           <ul className='contacts'>
             <li className='active'>
-              <div className='d-flex bd-highlight'>
+              <div className='d-flex bg-danger p-3 '>
                 <div className='user_info'>
-                  <span>New order placed..</span>
-                  <p>10 Aug 2020</p>
+                  <span className='text-white'>A Person Arrived</span>
+                  <p className='text-white'>10 Aug 2020</p>
                 </div>
-                <div className='ms-auto'>
-                  <Link to='#' className='btn btn-primary btn-xs sharp me-1'>
+                {/* <div className='ms-auto'> */}
+                  {/* <Link to='#' className='btn btn-primary btn-xs sharp me-1'>
                     <i className='fa fa-pencil'></i>
                   </Link>
                   <Link to='#' className='btn btn-danger btn-xs sharp'>
                     <i className='fa fa-trash'></i>
+                  </Link> */}
+                {/* </div> */}
+              </div>
+            </li>
+            <li>
+              <div className='d-flex bg-danger p-3'>
+                <div className='user_info '>
+                  <span className='text-white'>Someone Detect near the gate</span>
+                  <p className='text-white'>10 Aug 2020</p>
+                </div>
+                <div className='ms-auto'>
+                  {/* <Link to='#' className='btn btn-primary btn-xs sharp me-1'>
+                    <i className='fa fa-pencil'></i>
                   </Link>
+                  <Link to='#' className='btn btn-danger btn-xs sharp'>
+                    <i className='fa fa-trash'></i>
+                  </Link> */}
                 </div>
               </div>
             </li>
             <li>
-              <div className='d-flex bd-highlight'>
+              <div className='d-flex p-3'>
                 <div className='user_info'>
-                  <span>Youtube, a video-sharing website..</span>
+                  <span>Wind Blowing</span>
                   <p>10 Aug 2020</p>
                 </div>
                 <div className='ms-auto'>
-                  <Link to='#' className='btn btn-primary btn-xs sharp me-1'>
+                  {/* <Link to='#' className='btn btn-primary btn-xs sharp me-1'>
                     <i className='fa fa-pencil'></i>
                   </Link>
                   <Link to='#' className='btn btn-danger btn-xs sharp'>
                     <i className='fa fa-trash'></i>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </li>
             <li>
-              <div className='d-flex bd-highlight'>
+              <div className='d-flex p-3'>
                 <div className='user_info'>
-                  <span>john just buy your product..</span>
+                  <span>All Good</span>
                   <p>10 Aug 2020</p>
                 </div>
                 <div className='ms-auto'>
-                  <Link to='#' className='btn btn-primary btn-xs sharp me-1'>
+                  {/* <Link to='#' className='btn btn-primary btn-xs sharp me-1'>
                     <i className='fa fa-pencil'></i>
                   </Link>
                   <Link to='#' className='btn btn-danger btn-xs sharp'>
                     <i className='fa fa-trash'></i>
-                  </Link>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className='d-flex bd-highlight'>
-                <div className='user_info'>
-                  <span>Athan Jacoby</span>
-                  <p>10 Aug 2020</p>
-                </div>
-                <div className='ms-auto'>
-                  <Link to='#' className='btn btn-primary btn-xs sharp me-1'>
-                    <i className='fa fa-pencil'></i>
-                  </Link>
-                  <Link to='#' className='btn btn-danger btn-xs sharp'>
-                    <i className='fa fa-trash'></i>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </li>

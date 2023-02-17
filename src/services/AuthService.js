@@ -21,6 +21,15 @@ export function signUp(email, username, phone, password) {
   );
 }
 
+export function sensor() {
+  
+    const  da= axios.get(
+    // `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyD3RPAp3nuETDn9OQimqn_YF6zdzqWITII`,
+    `https://home-sec.onrender.com/api`
+    );
+    return da;
+}
+
 export function login(email, password) {
     const postData = {
         email,
