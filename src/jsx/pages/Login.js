@@ -74,7 +74,7 @@ m261 -168 c15 -18 9 -27 -94 -128 l-69 -69 -68 68 c-65 64 -68 69 -52 86 16
 					</div>
 					<h2>IntruNet</h2>
 					<h3 className="mb-2">Welcome back!</h3>
-					<p>Your Security,Our Goal! <br /></p>
+					<p>User Security <br />Security and Solutions</p>
 				</div>
 				<div className="aside-image" style={{backgroundImage:"url(" + loginbg + ")"}}></div>
 			</div>

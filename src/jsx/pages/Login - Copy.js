@@ -72,7 +72,7 @@ function Login (props) {
                             <li><Link to={"#"}><i className="fab fa-linkedin-in"></i></Link></li>
                         </ul>
                         <div className="mt-3 bottom-privacy">
-                            <p>Copyright © Designed & Developed by <a href="https://dexignzone.com/" rel="noreferrer" target="_blank">DexignZone</a> 2021</p>
+                            {/* <p>Copyright © Designed & Developed by <a href="https://dexignzone.com/" rel="noreferrer" target="_blank">DexignZone</a> 2021</p> */}
                         </div>
                     </div>
                 </div>

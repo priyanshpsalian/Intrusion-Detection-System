@@ -44,9 +44,9 @@ const fetchBellData = () => {
 // 		window.location.href="http://localhost:3000/react/demo/chart-chartjs";
 // 	}
 //   }, 1000); 
-setInterval(() => {
-	fetchBellData();
-  }, 1000);
+// setInterval(() => {
+// 	fetchBellData();
+//   }, 1000);
 
 const Home = () => {
 	const { changeBackground } = useContext(ThemeContext);
