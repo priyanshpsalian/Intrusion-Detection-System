@@ -103,11 +103,11 @@ const HistoryBooking = () =>{
 										<input type="checkbox" onClick={() => chackboxFun("all")} className="form-check-input" id="checkAll" required=""/>
 									</div>
 								</th>
-								<th>Room Name</th>
-								<th>Bed Type</th>
+								<th>Photo</th>
+								<th>Name</th>
 								<th>Room Floor</th>
-								<th>Room Facility</th>
-								<th>Book Date</th>
+								<th>Reason</th>
+								<th>Date of Visit</th>
 								<th className="bg-none"></th>
 							</tr>
 						</thead>
@@ -128,14 +128,14 @@ const HistoryBooking = () =>{
 											</div>	
 										</div>	
 										<div>
-											<span className="text-primary">#0002</span>
-											<h4 className="mb-0 mt-1"><Link  className="text-black" to={"./guest-detail"}>Deluxe B-0004</Link></h4>
+											
+											<h4 className="mb-0 mt-1"><Link  className="text-black" to={"./guest-detail"}></Link></h4>
 										</div>
 									</div>
 								</td>
 								<td>
 									<div>
-										<span className="fs-16">Single Bed</span>
+										<span className="fs-16">Shantanu Jagtap</span>
 									</div>
 								</td>
 								<td>
@@ -146,12 +146,12 @@ const HistoryBooking = () =>{
 								<td>
 									<div>
 										
-										<span className="fs-16">AC, Shower, Double Bed, Towel, Bathup,<br/> Coffee Set, LED TV, Wifi</span>
+										<span className="fs-16">Meeting with the investor<br/> </span>
 									</div>
 								</td>
 								<td>
 									<div>
-										<h5>Oct 29th, 2021</h5>
+										<h5>Jan 29th, 2021</h5>
 										<span className="fs-14">08:29 AM</span>
 									</div>
 								</td>
@@ -173,14 +173,14 @@ const HistoryBooking = () =>{
 											</div>	
 										</div>	
 										<div>
-											<span className="text-primary">#0002</span>
-											<h4 className="mb-0 mt-1"><Link className="text-black" to={"./guest-detail"}>Deluxe B-0004</Link></h4>
+											
+											<h4 className="mb-0 mt-1"><Link className="text-black" to={"./guest-detail"}></Link></h4>
 										</div>
 									</div>	
 								</td>
 								<td>
 									<div>
-										<span className="fs-16">Double Bed</span>
+										<span className="fs-16">Jayu Jain</span>
 									</div>
 								</td>
 								<td>
@@ -190,12 +190,12 @@ const HistoryBooking = () =>{
 								</td>
 								<td>
 									<div>
-										<span className="fs-16">AC, Shower, Double Bed, Towel, Bathup,<br /> Coffee Set, LED TV, Wifi</span>
+										<span className="fs-16">Reapairing (Wiremen)</span>
 									</div>
 								</td>
 								<td>
 									<div>
-										<h5>Oct 31th, 2021</h5>
+										<h5>Jan 31th, 2021</h5>
 										<span className="fs-14">10:23 9M</span>
 									</div>
 								</td>
@@ -217,14 +217,14 @@ const HistoryBooking = () =>{
 											</div>	
 										</div>	
 										<div>
-											<span className="text-primary">#0002</span>
-											<h4 className="mb-0 mt-1"><Link className="text-black" to={"./guest-detail"}>Deluxe B-0004</Link></h4>
+											
+											<h4 className="mb-0 mt-1"><Link className="text-black" to={"./guest-detail"}></Link></h4>
 										</div>
 									</div>	
 								</td>
 								<td>
 									<div>
-										<span className="fs-16">Double Bed</span>
+										<span className="fs-16">Priyansh Salian</span>
 									</div>
 								</td>
 								<td>
@@ -234,12 +234,12 @@ const HistoryBooking = () =>{
 								</td>
 								<td>
 									<div>
-										<span className="fs-16">AC, Shower, Double Bed, Towel, Bathup,<br /> Coffee Set, LED TV, Wifi</span>
+										<span className="fs-16">Meeting with relatives</span>
 									</div>
 								</td>
 								<td>
 									<div>
-										<h5>Nov 03th, 2021</h5>
+										<h5>Feb 03th, 2021</h5>
 										<span className="fs-14">10:30 AM</span>
 									</div>
 								</td>

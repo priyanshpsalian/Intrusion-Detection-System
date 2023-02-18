@@ -396,7 +396,7 @@ const Element = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl-6 col-lg-12">
+    <div className="col-xl-6 col-lg-12">
           <div className="card">
             <div className="card-header">
               <h4 className="card-title">Vertical Form</h4>

@@ -406,6 +406,7 @@ const series1=[
             <Card.Header>
 				<h4 className="card-title">Bar</h4>
             </Card.Header>
+
             <Card.Body>
               <BarChartNoPadding />
             </Card.Body>
