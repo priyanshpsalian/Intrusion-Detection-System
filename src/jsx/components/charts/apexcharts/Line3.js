@@ -2,14 +2,16 @@ import React from "react";
 import ReactApexChart from "react-apexcharts";
 
 class ApexLine3 extends React.Component {
+
   constructor(props) {
     super(props);
-
+    console.log(props,"ll");
     this.state = {
       series: [
         {
           name: "Running",
-          data: [20, 40, 20, 80, 40, 40, 20, 60, 60, 20, 110, 60],
+          // data: [20, 40, 20, 80, 40, 40, 20, 60, 60, 20, 110,20, props.data],
+          data:props.data,
           
         },
       ],
@@ -68,6 +70,8 @@ class ApexLine3 extends React.Component {
         },
       },
     };
+    // constructor();
+    // this.setState(series[]);
   }
 
   render() {

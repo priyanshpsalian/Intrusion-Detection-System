@@ -11,6 +11,16 @@ import MsgBox from './MsgBox'
 
 const Chat = ({ PerfectScrollbar, toggleChatBox, toggleTab }) => {
   const [openMsg, setOpenMsg] = useState(false)
+  // const [data, setData] = useState();
+  // const fetchData = () => {
+  //     return axios.get("https://home-sec.onrender.com/api/testing")
+  //           .then((response) => {
+  //             console.log(response.data)
+  //           setData(response.data)
+  //         });
+  // }
+
+
   return (
     <div
       className={`tab-pane fade  ${toggleTab === 'chat' ? 'active show' : ''}`}

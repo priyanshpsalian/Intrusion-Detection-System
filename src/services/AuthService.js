@@ -21,13 +21,22 @@ export function signUp(email, username, phone, password) {
   );
 }
 
-export function sensor() {
+export async function sensor() {
   
-    const  da= axios.get(
-    // `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyD3RPAp3nuETDn9OQimqn_YF6zdzqWITII`,
-    `https://home-sec.onrender.com/api`
-    );
-    return da;
+    // const  da= axios.get(
+    // // `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyD3RPAp3nuETDn9OQimqn_YF6zdzqWITII`,
+    // `https://home-sec.onrender.com/api`
+    // );
+   const response = await axios
+      .get("https://home-sec.onrender.com/api")
+        console.log(response.data);
+        // const jso = JSON.parse(response);
+        // console.log(jso);
+        return response.data;
+    
+    //   return "empty"
+    // console.log(da);
+    // return da;
 }
 
 export function login(email, password) {
