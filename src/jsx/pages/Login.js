@@ -61,7 +61,7 @@ function Login (props) {
 						</svg>
 					</div>
 					<h3 className="mb-2">Welcome back!</h3>
-					<p>User Experience & Interface Design <br />Strategy SaaS Solutions</p>
+					<p>User Security <br />Security and Solutions</p>
 				</div>
 				<div className="aside-image" style={{backgroundImage:"url(" + loginbg + ")"}}></div>
 			</div>
