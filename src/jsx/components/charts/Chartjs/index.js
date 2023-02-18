@@ -1,132 +1,152 @@
-import React from "react";
-// import { Link } from 'react-router-dom';
-import { Row, Col, Card } from "react-bootstrap";
+import React, { useState } from 'react';
+import Webcam from 'react-webcam';
+import { Row, Col, Card, Button, Dropdown, ButtonGroup,Modal } from "react-bootstrap";
+import axios from "axios";
+// import React, { useState } from 'react';
+// import Button from 'react-bootstrap/Button';
+// import Modal from 'react-bootstrap/Modal';
 
-import PageTitle from "../../../layouts/PageTitle";
-import BarChart1 from "./bar1";
-import BarChart5 from "./bar5";
-import BarChart6 from "./bar6";
-import LineChart1 from "./line1";
-import DualLine from "./dualLine";
-import BasicArea from "./basicArea";
-import GradientArea from "./gradinetArea";
-//import DualArea from "./dualArea";
-import Radar from "./radar";
-import PolarChart from "./polar";
-//import DualLine2 from "./dualLine2";
+// import './weblivecapture.css';
 
-import ChartPie from "./pie";
+const videoConstraints = {
+	width: 1280,
+	height: 720,
+	facingMode: 'user'
+};
 
-function ChartChartjs() {
-  return (
-    <>
-      <PageTitle motherMenu="Charts" activeMenu="ChartJs" />
-      <Row>
-        <Col xl={6} lg={6}>
-          <Card>
-            <Card.Header>
-              <h4 className="card-title">Bar chart</h4>
-            </Card.Header>
-            <Card.Body>
-              <BarChart1 />
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col xl={6} lg={6}>
-          <Card>
-            <Card.Header>
-              <h4 className="card-title">Bar chart</h4>
-            </Card.Header>
-            <Card.Body>
-              <BarChart5 />
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col xl={6} lg={6}>
-          <Card>
-            <Card.Header>
-              <h4 className="card-title">Bar chart</h4>
-            </Card.Header>
-            <Card.Body>
-              <BarChart6 />
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col xl={6} lg={6}>
-          <Card>
-            <Card.Header>
-				<h4 className="card-title">Line chart</h4>
-            </Card.Header>
-            <Card.Body>
-              <LineChart1 />
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col xl={6} lg={6}>
-          <Card>
-            <Card.Header>
-              <h4 className="card-title">Dual Line chart</h4>
-            </Card.Header>
-            <Card.Body>
-              <DualLine />
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col xl={6} lg={6}>
-          <Card>
-            <Card.Header>
-              <h4 className="card-title">Basic Area Chart</h4>
-            </Card.Header>
-            <Card.Body>
-              <BasicArea />
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col xl={6} lg={6}>
-          <Card>
-            <Card.Header>
-               <h4 className="card-title">Gradinet Area Chart</h4>
-            </Card.Header>
-            <Card.Body>
-              <GradientArea />
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col xl={6} lg={6}>
-          <Card>
-            <Card.Header>
-               <h4 className="card-title">Radar Chart</h4>
-            </Card.Header>
-            <Card.Body>
-              <Radar />
-            </Card.Body>
-          </Card>
-        </Col>
+const WebLiveCapture = () => {
+  const [show, setShow] = useState(false);
 
-        <Col xl={6} lg={6}>
-          <Card>
-            <Card.Header>
-               <h4 className="card-title">Pie</h4>
-            </Card.Header>
-            <Card.Body>
-              <ChartPie />
-            </Card.Body>
-          </Card>
-        </Col>
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-        <Col xl={6} lg={6}>
-          <Card>
-            <Card.Header>
-                <h4 className="card-title">Polar Chart</h4>
-            </Card.Header>
-            <Card.Body>
-              <PolarChart />
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </>
-  );
-}
+	const webcamRef = React.useRef(null);
+  const [bell,setBell] = useState(true);
+  const [name,setName] = useState('');
+  const [user,setUser] = useState('');
+  const [alert,setAlert] = useState('');
+  // const [data,setData] = useState('');
+	const [ image, setImage ] = useState('');
+	const capture = React.useCallback(
+		() => {
+			const imageSrc = webcamRef.current.getScreenshot();
+			setImage(imageSrc);
+			console.log('Captured');
+		},
+		[ webcamRef ]
+	);
+    console.log(bell);
 
-export default ChartChartjs;
+  
+    const fetchData = () => {
+      const data = {"img": name}
+      console.log(data.img);
+      return axios.post("https://home-sec.onrender.com/api",data)
+            .then((response) => {
+              // console.log(response.data)
+             //setData(response.data)
+          });
+    }
+
+    fetchData();
+
+
+    const fetchUser = () => {
+      // const data = "Known"
+      return axios.get("https://home-sec.onrender.com/api")
+            .then((response) => {
+              console.log(response.data)
+            //  setData(response.data)
+          });
+    }
+
+
+    fetchUser();
+
+    
+    const fetchAllow = () => {
+      const data = {"known": user}
+      console.log(data.known);
+      return axios.post("https://home-sec.onrender.com/api/known",data)
+            .then((response) => {
+              console.log(response.data)
+             //setData(response.data)
+          });
+    }
+
+    fetchAllow();
+
+    const fetchAlert = () => {
+      const data = {"alert": alert}
+      console.log(data.alert);
+      return axios.post("https://home-sec.onrender.com/api/alert",data)
+            .then((response) => {
+              console.log(response.data)
+             //setData(response.data)
+          });
+    }
+
+    fetchAlert();
+	return (
+		<React.Fragment>
+			<Webcam
+				audio={false}
+				ref={webcamRef}
+				screenshotFormat="image/jpeg"
+				height={1000}
+				width={1000}
+				videoConstraints={videoConstraints}
+			/>
+
+		<h1>Known</h1>
+
+      <Button className="me-2" variant="light" onClick={capture}>
+                  Capture Photo
+                </Button>
+      
+		            <Button className="me-2" variant="info" onClick={()=>{setBell(!bell)}}>
+                  Bell
+                </Button>
+
+                
+
+
+                
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header >
+          <Modal.Title>User Registration</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <form>
+  <label>
+   <span className='p-3'> Name: </span> 
+    <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder='Add your Name' />
+  </label>
+  {/* <input type="submit" value="Submit" /> */}
+</form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="success" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+      
+      {bell ? (	<><Button className="me-2" variant="success" onClick={handleShow}>
+                 Add Name
+                </Button>	<Button className="me-2" variant="danger" onClick={()=>{setAlert('1')}}>
+                  Alert
+                </Button>
+
+                <Button className="me-2" variant="info" onClick={()=>{setUser('1')}}>
+                  Allow 
+                </Button>
+  </>):" "}
+		</React.Fragment>
+	);
+};
+
+export default WebLiveCapture;

@@ -5,6 +5,7 @@ import {
   loadingToggleAction,
   signupAction,
 } from "../../store/actions/AuthActions";
+
 // image
 //import logo from "../../images/logo-full.png";
 

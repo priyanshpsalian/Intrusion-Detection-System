@@ -214,17 +214,26 @@ const SideBar = () => {
                 >
                   Go Live
                 </Link>
-              <li><Link className={`${path === "app-profile" ? "mm-active" : ""}`} to="/app-profile">Profile</Link></li>
-              <li><Link className={`${path === "post-details" ? "mm-active" : ""}`} to="/post-details">Post Details</Link></li>
-              <li className={`${email.includes(path) ? "mm-active" : ""}`}><Link className="has-arrow" to="#" >Email</Link>
+
+                <Link
+                  className={`${path === "chart-chartjs" ? "mm-active" : ""}`}
+                  to="/chart-chartjs"
+                >
+                  Bell
+                </Link>
+
+                
+              {/* <li><Link className={`${path === "app-profile" ? "mm-active" : ""}`} to="/app-profile">Profile</Link></li> */}
+              {/* <li><Link className={`${path === "post-details" ? "mm-active" : ""}`} to="/post-details">Post Details</Link></li> */}
+              {/* <li className={`${email.includes(path) ? "mm-active" : ""}`}><Link className="has-arrow" to="#" >Email</Link>
                 <ul  className={`${email.includes(path) ? "mm-show" : ""}`}>
                   <li><Link className={`${ path === "email-compose" ? "mm-active" : ""}`} to="/email-compose">Compose</Link></li>
                   <li><Link className={`${path === "email-inbox" ? "mm-active" : ""}`} to="/email-inbox">Inbox</Link></li>
                   <li><Link className={`${path === "email-read" ? "mm-active" : ""}`} to="/email-read">Read</Link></li>
                 </ul>
-              </li>
-              <li><Link className={`${path === "app-calender" ? "mm-active" : ""}`}to="/app-calender">Calendar</Link></li>
-              <li className={`${shop.includes(path) ? "mm-active" : ""}`}><Link className="has-arrow" to="#" >Shop</Link>
+              </li> */}
+              {/* <li><Link className={`${path === "app-calender" ? "mm-active" : ""}`}to="/app-calender">Calendar</Link></li> */}
+              {/* <li className={`${shop.includes(path) ? "mm-active" : ""}`}><Link className="has-arrow" to="#" >Shop</Link>
                 <ul  className={`${shop.includes(path) ? "mm-show" : ""}`}>
                   <li><Link className={`${ path === "ecom-product-grid" ? "mm-active" : ""}`} to="/ecom-product-grid">Product Grid</Link></li>
                   <li><Link className={`${ path === "ecom-product-list" ? "mm-active" : ""}`} to="/ecom-product-list">Product List</Link></li>
@@ -234,7 +243,7 @@ const SideBar = () => {
                   <li><Link className={`${ path === "ecom-invoice" ? "mm-active" : "" }`} to="/ecom-invoice">Invoice</Link></li>
                   <li><Link className={`${ path === "ecom-customers" ? "mm-active" : "" }`} to="/ecom-customers">Customers</Link></li>
                 </ul>
-              </li>
+              </li> */}
             </ul>
           </li>
           <li className={`${charts.includes(path) ? "mm-active" : ""}`}>
@@ -251,38 +260,38 @@ const SideBar = () => {
 					RechartJs
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   className={`${path === "chart-chartjs" ? "mm-active" : ""}`}
                   to="/chart-chartjs"
                 >
                   Chartjs
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link
                   className={`${path === "chart-chartist" ? "mm-active" : ""}`}
                   to="/chart-chartist"
                 >
                   Chartist
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link
                   className={`${path === "chart-sparkline" ? "mm-active" : ""}`}
                   to="/chart-sparkline"
                 >
                   Sparkline
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link
                   className={`${path === "chart-apexchart" ? "mm-active" : ""}`}
                   to="/chart-apexchart"
                 >
                   Apexchart
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </li>
           <li className={`${bootstrap.includes(path) ? "mm-active" : ""}`}>
