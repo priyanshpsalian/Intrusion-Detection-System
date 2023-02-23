@@ -21,8 +21,10 @@ app.use('/api', userRoutes)
 app.use('/api', testRoutes)
 
 // mongodb connection
+const pass = process.env.PASSWORD;
+// console.log(pass);
 const dburl =
-  "mongodb+srv://tsecboys:tsec1234@djcluster.xhoiyij.mongodb.net/?retryWrites=true&w=majority";
+  `mongodb+srv://tsecboys:${pass}@djcluster.xhoiyij.mongodb.net/?retryWrites=true&w=majority`;
 const connectDB = (dburl) => {
     return mongoose.connect(dburl, {
         useNewUrlParser: true,
