@@ -105,7 +105,7 @@ const Demo4 = () => {
 										<RadialDount />
 									</div>
 									<h2>785</h2>
-									<span className="fs-16 text-black">Available Room Today</span>
+									<span className="fs-16 text-black">Today's total mild threats</span>
 								</div>
 							</div>
 						</div>
