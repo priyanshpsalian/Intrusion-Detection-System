@@ -1,7 +1,11 @@
 <p align="center">
-  <img src="./server/images/logo.svg" alt="Logo">
+  <img src="./server/images/new_logo.png" alt="Logo">
 </p>
-
+<p align="center" style="font-size: 20px;">
+  <b>
+    SECURE HOME
+  </b>
+</p>
 <p align="center">
   An easy-to-use framework designed to enable efficient implementation of an Intrusion/Theft Detection System using <b> IoT and AI</b>.
   <br />
