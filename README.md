@@ -99,7 +99,12 @@ This is an intrusion/theft detection system that utilizes the Internet of Things
   - Amazon DynamoDB
   - Amazon CloudWatch
   - Twilio
-
+- Model
+  - Flask
+  - Python
+  - YOLO (You Only Look Once)
+  - OpenCV
+  - TensorFlow
 <br />
 
 **Dependencies**
