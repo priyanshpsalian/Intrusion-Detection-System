@@ -119,13 +119,13 @@ NOTE: Individual instructions can be found in respective directories.
 ├───client
 ├───model
 ├───server
-└───IOT
+└───IoT
 ```
 
 - `client`: The frontend for the application.
 - `model`: Model APIs for Machine Learning.
 - `server`: The backend for the application.
-- `IOT`: The neccessare api for IOT devices
+- `IoT`: The neccessare api for IoT devices. 
 <br />
 
 **Client**
