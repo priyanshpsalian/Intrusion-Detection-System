@@ -15,7 +15,7 @@ const storage = multer.diskStorage({
     }
 })
 const upload = multer({ storage });
-
+// this route is for saving the profile picture during registration using multer
 // router.post('/register', upload.single('profilePicture'), register);
 router.post("/register", register);
 
